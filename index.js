@@ -40,14 +40,24 @@ app.get('/comments', (req, res) => {
     res.render('comments/index.ejs', { comments })
 });
 
-app.get('/tacos', (req, res) => {
+app.get('/comments/new', (req, res) => {
+    res.render('comments/new')
+})
+
+app.post('/comments', (req, res) => {
+    const { username, comment } = req.body;
+    comments.push({ username, comment });
+    res.redirect('/comments');
+})
+
+/*app.get('/tacos', (req, res) => {
     res.send("GET /tacos response");
 });
 
 app.post('/tacos', (req, res) => {
     const { meat, qty } = req.body;
     res.send(`Ok, here are your tacos`)
-});
+});*/
 
 
 app.listen(3000, () => {
