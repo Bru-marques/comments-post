@@ -1,24 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../partials/head')%>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comments Details</title>
-</head>
+    <div class="body">
+        <div class="container">
+            <h1>Comment from <%= comment.username %>
+            </h1>
+            <div class="card">
+                <div class="card-header">
+                    <b>
+                        <%= comment.username%>
+                    </b> said:
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <%= comment.comment%>
+                    </p>
+                    <div class="buttons">
 
-<body>
-    <h1>Comment id: <%= comment.id %>
-    </h1>
-    <h4>
-        <%= comment.comment%> - <%=comment.username%>
-    </h4>
-    <a href="/comments">All Comments</a>
-    <a href="/comments/<%= comment.id%>/edit">Edit Comment</a>
-    <form method="POST" action="/comments/<%= comment.id%>?_method=DELETE">
-        <button>Delete</button>
-    </form>
-</body>
+                        <a href="/comments/<%= comment.id%>/edit" class="btn">Edit Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="/comments" class="newComment">All Comments</a>
+                <a class="newComment" href="/comments/new">New Comment</a>
+            </div>
+            <form method="POST" action="/comments/<%= comment.id%>?_method=DELETE">
+                <button class="btn-secondary">Delete</button>
+            </form>
+        </div>
 
-</html>
+    </div>
+
+    </div>
+    </div>
+    </body>
+
+    </html>

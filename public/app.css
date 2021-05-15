@@ -1,3 +1,53 @@
-body {
-    background-color:aquamarine;
+.body {
+    background-color:#343a40;
+    /*background-color:#ddb2ab;*/
+    padding: 30px 300px ;
+    display: flex;
+    max-height:1000px;
+    height:100vw;
+    overflow-y: hidden;
+}
+.container {
+    padding-top: 20px;
+    height: 100%;
+    align-items: center;
+    background-color:#f9f7f5;
+    border-radius: 8px;
+    color:#6c757d;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-weight:400;
+    margin-bottom: 30px;
+}
+
+.newComment {
+    text-decoration: none;
+    color:#6c757d;
+}
+
+.card{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.card-body {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.btn {
+    background-color:#ee5f2f;
+    color:#f3f0e7;
+    font-size:13px;
+}
+.btn-secondary {
+    background-color: #5a8d85;
+    color:#f3f0e7;
+    font-size:13px;
+}
+.card-header {
+    background-color: #5a8d85;
+    color:#f3f0e7
 }
