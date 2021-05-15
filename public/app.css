@@ -1,5 +1,5 @@
 .body {
-    background-color:#343a40;
+    background-color:#047972;
     /*background-color:#ddb2ab;*/
     padding: 30px 300px ;
     display: flex;
@@ -11,7 +11,7 @@
     padding-top: 20px;
     height: 100%;
     align-items: center;
-    background-color:#f9f7f5;
+    background-color:#ecf8f2;
     border-radius: 8px;
     color:#6c757d;
     display: flex;
@@ -19,9 +19,9 @@
 }
 
 
-h1 {
+.h1 {
     font-weight:400;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .newComment {
@@ -38,7 +38,7 @@ h1 {
     justify-content: space-between;
 }
 .btn {
-    background-color:#ee5f2f;
+    background-color:#499260;
     color:#f3f0e7;
     font-size:13px;
 }
